@@ -1,0 +1,5 @@
+pandas
+faker
+python-dotenv
+requests
+numpy
