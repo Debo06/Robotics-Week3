@@ -1,5 +1,5 @@
 
 """update.py module."""
 
-def write_cleaned_data(df, output_path):
-    df.to_csv(output_path, index=False)
+def write_cleaned_data(df, "data/"):
+    df.to_csv("data/", index=False)
