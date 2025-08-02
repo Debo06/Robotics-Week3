@@ -1,5 +1,5 @@
 
-# generate_fake_inventory.py
+# generate_fake_inventory.py  
 """
 Creates data/inventory_raw.csv with columns:
 SKU, Description, Location, OnHandQty, ReorderPoint, UnitCost
@@ -27,4 +27,4 @@ def make_row(sku):
 Path("data").mkdir(exist_ok=True)
 df = pd.DataFrame([make_row(s) for s in SKUS])
 df.to_csv("data/inventory_raw.csv", index=False)
-print("✅  Fake inventory written to data/inventory_raw.csv")
+print("✅  Fake inventory written to data/inventory_raw.csv") # after the successfull completion of the file
