@@ -9,13 +9,13 @@ from alert import generate_alerts
 
 def main(input_path, output_path):
     print("🚚 Loading data...")
-    df = load_inventory_data(input_path)
+    df = load_inventory_data("data/inventory_raw.csv")
 
     print("🛠️ Processing data...")
     df = clean_and_process(df)
 
     print("📦 Writing cleaned data...")
-    write_cleaned_data(df, output_path)
+    write_cleaned_data(df, "data/Processed.csv")
 
     print("📣 Generating restock alerts...")
     generate_alerts(df)
